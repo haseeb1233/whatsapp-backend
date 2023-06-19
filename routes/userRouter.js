@@ -293,7 +293,7 @@ userRouer.post("/getOtp", async (req, res) => {
 userRouer.post("/forgot", async (req, res) => {
   try {
     let data = await otpModel.findOne({email:req.body.email});
-    console.log(req.body.otp,data.otp,"ghk");
+    console.log(req.body.otp,data.otp);
     if (req.body.otp && req.body.otp == data.otp) {
       console.log("body")
       let user = await userModel.findOne({ email: req.body.email });
@@ -659,3 +659,5 @@ module.exports = { userRouer };
 // }
 // //-------------------- All exports ---------------------------------------------
 // module.exports = { userRouer };
+
+
