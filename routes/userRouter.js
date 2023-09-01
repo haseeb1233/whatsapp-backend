@@ -49,7 +49,7 @@ userRouer.get(
         process.env.refresh_key,
         { expiresIn: "120s" }
       );
-      res.redirect(`https://tourmaline-puffpuff-362988.netlify.app/chatpage.html?avtar=${req.user.avtar}&id=${fetch_user._id}&myName=${fetch_user.name}&role=${fetch_user.role}&token=${token}&refreshToken=${refreshToken}`)
+      res.redirect(`https://64f21522a9a1ad046ee3d176--splendid-swan-192dd7.netlify.app/chatpage.html?avtar=${req.user.avtar}&id=${fetch_user._id}&myName=${fetch_user.name}&role=${fetch_user.role}&token=${token}&refreshToken=${refreshToken}`)
       console.log("here");
 // res.redirect(`http://127.0.0.1:5501/frontend/chatpage.html?avtar=${req.user.avtar}&id=${fetch_user._id}&token=${token}&refreshToken=${refreshToken}`)
 
